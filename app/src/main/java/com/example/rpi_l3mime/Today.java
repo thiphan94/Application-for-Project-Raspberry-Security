@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -25,39 +26,36 @@ import java.util.TimeZone;
 
 public class Today extends AppCompatActivity {
 
-    List<ListData> listData;
     RecyclerView rv;
     MyAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_today);
 
         rv=(RecyclerView)findViewById(R.id.recyclerview);
-        rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(this));
 
+        FirebaseRecyclerOptions<ListData> options =
+                new FirebaseRecyclerOptions.Builder<ListData>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("users"), ListData.class)
+                        .build();
 
+        adapter=new MyAdapter(options);
+        rv.setAdapter(adapter);
 
-        final DatabaseReference nm= FirebaseDatabase.getInstance().getReference("users");
-        nm.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                listData=new ArrayList<>();
-                for (DataSnapshot list : dataSnapshot.getChildren()){
-                    listData.add(list.getValue(ListData.class));
+    }
 
-                }
-                adapter=new MyAdapter(listData);
-                rv.setAdapter(adapter);
+    @Override
+    protected void onStart() {
+        super.onStart();
+        adapter.startListening();
+    }
 
-                }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                String error = databaseError.toString();
-                Toast.makeText(Today.this, "Error : " + error, Toast.LENGTH_LONG).show();
-            }
-        });
-
+    @Override
+    protected void onStop() {
+        super.onStop();
+        adapter.stopListening();
     }
 }
