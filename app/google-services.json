@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "391814499821",
+    "firebase_url": "https://rpi-security-ee0c0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rpi-security-ee0c0",
+    "storage_bucket": "rpi-security-ee0c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391814499821:android:3a123a98375bd7ebacabe4",
+        "android_client_info": {
+          "package_name": "com.example.rpi_l3mime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391814499821-4e777a8vfhf6n4s5abr05i7aj2b366ls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4m7e4zvyQcfcGAAP-aR0xHsCZNNC1V3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391814499821-4e777a8vfhf6n4s5abr05i7aj2b366ls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

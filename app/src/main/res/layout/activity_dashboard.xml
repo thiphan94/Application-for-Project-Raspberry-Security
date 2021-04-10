@@ -1,0 +1,100 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="149dp"
+        android:layout_marginRight="149dp"
+        android:layout_marginBottom="593dp"
+        android:text="WELCOME BACK "
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="normal|bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="98dp"
+        android:layout_marginRight="98dp"
+        android:layout_marginBottom="555dp"
+        android:text="Smart security is ready for you "
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <Button
+        android:id="@+id/page1"
+        android:layout_width="287dp"
+        android:layout_height="105dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="377dp"
+        android:alpha="0.3"
+        android:background="@drawable/buttonshape"
+        android:text="SEE VISITORS OF TODAY"
+        android:textColor="@color/white"
+        app:backgroundTint="#1D3C26"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="732dp" />
+
+    <Button
+        android:id="@+id/page2"
+        android:layout_width="252dp"
+        android:layout_height="105dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="226dp"
+        android:alpha="0.3"
+        android:background="@drawable/buttonshape"
+        android:text="FACE RECOGNITION DATABASE"
+        android:textColor="@color/white"
+        app:backgroundTint="#1D3C26"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="732dp" />
+
+    <Button
+        android:id="@+id/page3"
+        android:layout_width="223dp"
+        android:layout_height="105dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="71dp"
+        android:alpha="0.3"
+        android:background="@drawable/buttonshape"
+        android:text="SEARCH VISITORS"
+        android:textColor="@color/white"
+        app:backgroundTint="#1D3C26"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="732dp" />
+
+
+</RelativeLayout>
