@@ -22,5 +22,14 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(new Intent(Dashboard.this, Today.class));
             }
         });
+
+        Button btn2 = (Button)findViewById(R.id.page2);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Dashboard.this, Data.class));
+            }
+        });
     }
 }

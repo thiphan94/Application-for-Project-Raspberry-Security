@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rpi_l3mime">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RPIL3MIME">
-        <activity android:name=".Today"></activity>
-        <activity android:name=".Data" />
+        <activity android:name=".Data"></activity>
+        <activity android:name=".Today" />
         <activity android:name=".Dashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_color">
+    android:background="@drawable/bg">
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_width="395dp"
-        android:layout_height="158dp"
+        android:layout_width="339dp"
+        android:layout_height="428dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
@@ -18,9 +18,8 @@
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
+        app:layout_constraintVertical_bias="0.433" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
